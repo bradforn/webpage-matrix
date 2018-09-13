@@ -1,0 +1,31 @@
+{
+  "name": "webpage-matrix",
+  "version": "1.0.0",
+  "description": "This is a version of my personal website build using express, handlebars, and express handlebars",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "bradforn",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bradforn/webpage-matrix.git"
+  },
+  "keywords": [
+    "matrix",
+    "express",
+    "web-message"
+  ],
+  "bugs": {
+    "url": "https://github.com/bradforn/webpage-matrix/issues"
+  },
+  "homepage": "https://github.com/bradforn/webpage-matrix#readme"
+}
