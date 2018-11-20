@@ -1,6 +1,8 @@
 var path = require('path');
 var express = require('express');
+//Handlebars and express are not really necessary
 var exphbs = require('express-handlebars');
+
 
 var app = express();
 var port = process.env.PORT || 3000;
@@ -18,23 +20,14 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 app.get('/', function (req, res) {
   res.render('index-page', {
-    title: 'Welcome',
-
+    title: 'Web-Matrix',
   });
 });
-
-app.get('/about', function (req, res) {
-  res.render('about-page', {
-    title: 'About Us',
-  
-  });
-});
-
 
 
 // Return a 404 and render the 404 page for any other route.
 app.get('*', function (req, res) {
-  res.status(404).render('404-page', {
+  res.status(404).render('index-page', {
     title: '404'
   });
 });
